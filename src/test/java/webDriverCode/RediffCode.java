@@ -19,6 +19,7 @@ public class RediffCode {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.rediff.com/");
+
         driver.findElement(By.cssSelector("a[class='signin']")).click();
         driver.findElement(By.cssSelector("input[id='login1']")).sendKeys("tatabatata1@rediffmail.com");
         driver.findElement(By.cssSelector("input[id='password']")).sendKeys("T@tabatata22");
